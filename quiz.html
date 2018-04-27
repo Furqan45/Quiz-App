@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="timer()">
+
+<center>
+    <div id="quizContainer" class="cont">
+        <h2 id="timer"></h2>
+        <h5 id="question"></h5>
+
+        <label><input type="radio" checked value="1" name="option" id=""><span id="option1"></span></label>
+        <br>
+        <label><input type="radio" value="2" name="option" id=""><span id="option2"></span></label>
+        <br>
+        <label><input type="radio" value="3" name="option" id=""><span id="option3"></span></label>
+        <br>
+        <label><input type="radio" value="4" name="option" id=""><span id="option4"></span></label>
+        <br>
+        <button onclick="next();">Next Question</button>
+    </div>
+    <div id="resultContainer" style="display: none">
+        <h1 id="score"></h1>
+    </div>
+</center>
+<script src="app.js"></script>
+</body>
+</html>
